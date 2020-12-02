@@ -34,7 +34,7 @@ li {
 
 /* --------------------------------- IMAGE SLIDER --------------------------------------------- */
 #section_slider {
-    margin-bottom: 30px;
+    margin-top: 100px;
 }
 
 #slider_container {
@@ -74,7 +74,7 @@ li {
 
 .slider_arrow {
     position: absolute;
-    z-index: 999;
+    z-index: 50;
     font-size: 2rem;
     cursor: pointer;
 }

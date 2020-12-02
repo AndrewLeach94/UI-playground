@@ -56,14 +56,14 @@ details summary:hover {
 }
 
 details summary {
-    list-style: none;
-    padding: 30px 0px 30px 20px;
+    /* list-style: none; */
+    padding: 30px 0px;
     transition: 0.2s;
   }
 
   /* removes arrow for Chrome */
 details summary::-webkit-details-marker {
-    display: none;
+    /* display: none; */
   }
 
 
