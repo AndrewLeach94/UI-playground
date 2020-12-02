@@ -1,0 +1,126 @@
+@import "dropdown.css";
+@import "mobile-menu.css";
+
+:root {
+    --grey-1: whitesmoke;
+    --grey-2: #E9E9E9;
+    --grey-3: #DDDDDD;
+}
+
+
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Helvetica', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+#menu-button {
+    margin-left: 30px;
+    position: fixed;
+    font-size: 2rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+/* --------------------------------- IMAGE SLIDER --------------------------------------------- */
+#section_slider {
+    margin-bottom: 30px;
+}
+
+#slider_container {
+    position: relative;
+}
+
+#image_container {
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width: 200%;
+    overflow-x: hidden;
+    transform: translateX(-25%);
+}
+
+.slider_image {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+
+.slider_image-inactive-left {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    opacity: 25%;
+}
+
+.slider_image-inactive-right {
+    grid-row: 1;
+    grid-column: 3;
+    width: 100%;
+    opacity: 25%;
+}
+
+.slider_arrow {
+    position: absolute;
+    z-index: 999;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#slider_back {
+    margin-left: 20px;
+    left: 0;
+    bottom: 50%;
+    top: 50%;
+}
+
+#slider_forward {
+    margin-right: 20px;
+    right: 0;
+    bottom: 50%;
+    top: 50%;
+}
+
+#slider_button-container {
+    position: absolute;
+    width: 20%;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.slider_button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--grey-1);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.slider_button-inactive {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: var(--grey-3);
+    cursor: pointer;
+}
+
+

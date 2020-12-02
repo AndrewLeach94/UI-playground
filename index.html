@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-Playground</title>
+    <script src="https://kit.fontawesome.com/19a9b1b335.js" crossorigin="anonymous"></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <i class="fas fa-bars" id="menu-button"></i>
+    </header>
+    <section id="section_dropdown">
+        <h2>Dropdown Menu</h2>
+        <div id="dropdown_nav">
+            <ul id="dropdown_list">
+                <li>Home</li>
+                <li id="list-services">Services
+                    <ul id="dropdown_submenu" class="dropdown_submenu-hidden">
+                        <li>Graphic Design</li>
+                        <li>Video Production</li>
+                        <li>Social Media Management</li>
+                    </ul>
+                </li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </section>
+    <section id="mobile-menu">
+        <div id="mobile_nav" class="mobile_nav-close">
+            <h2>Mobile Menu</h2>
+            <ul id="mobile_list">
+                <li>Home</li>
+                <details>
+                    <summary id="mobile-services">Services</summary>
+                    <ul id="mobile_submenu" class="mobile_submenu">
+                        <li>Graphic Design</li>
+                        <li>Video Production</li>
+                        <li>Social Media Management</li>
+                    </ul>
+                </details>
+                <li>Contact</li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="section_slider">
+        <h2>Image Slider</h2>
+        <div id="slider_container">
+            <div id="slider_back" class="slider_arrow">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+            <div id="slider_forward" class="slider_arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div id="image_container">
+                <img src="images/US-wp3.jpg" id ="image_1" class="slider_image-inactive-left">
+                <img src="images/US-wp4.jpg" id ="image_2" class="slider_image">
+                <img src="images/US-wp6.jpg" id ="image_3" class="slider_image-inactive-right">
+            </div> 
+            <div id="slider_button-container">
+                <div id="button_1"class="slider_button-inactive"></div>
+                <div id="button_2"class="slider_button"></div>
+                <div id="button_3"class="slider_button-inactive"></div>
+            </div>   
+        </div>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

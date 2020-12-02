@@ -1,0 +1,94 @@
+/* ---------------------DROPDOWN MENU------------------------------------------------------------ */
+#section_dropdown {
+    width: 100vw;
+}
+#dropdown_nav {
+    display: flex;
+    width: 100%;
+    background-color: var(--grey-1);
+}
+
+#dropdown_list {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#dropdown_list li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 0px 50px;
+    cursor: pointer;
+}
+
+
+.dropdown_submenu-visible {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    padding: 0;
+    background: var(--grey-2);
+    border: solid 1px var(--grey-2);
+    animation: fadeIn 0.2s;
+}
+
+/* To animate out properly, copy the visible class and only change animation and add visibility:hidden */
+.dropdown_submenu-hidden {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    padding: 0;
+    background: var(--grey-2);
+    border: solid 1px var(--grey-2);
+    animation: fadeOut 0.2s;
+}
+
+#dropdown_submenu li {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    padding: 5px 0px;
+    transition: 0.2s;
+}
+
+#dropdown_submenu li:hover {
+background: var(--grey-1);
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    } 
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 100%;
+    } 
+
+    to {
+        opacity: 0%;
+    }
+}
+
+
+
